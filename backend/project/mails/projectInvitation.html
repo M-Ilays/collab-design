@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project Invitation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        color: #333333;
+      }
+
+      .container {
+        margin-top: 50px !important;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .content {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Increased gap between buttons */
+        margin: 30px 0; /* Added more vertical spacing */
+        flex-wrap: wrap; /* Allows wrapping on small screens */
+      }
+
+      .button {
+        padding: 12px 25px; /* Increased padding for better clickability */
+        color: #ffffff !important;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-align: center;
+        min-width: 150px; /* Ensures consistent button widths */
+        box-sizing: border-box;
+      }
+
+      .accept {
+        background-color: #4caf50;
+      }
+
+      .accept:hover {
+        background-color: #3e8e41; /* Hover effect */
+      }
+
+      .reject {
+        background-color: #f44336;
+      }
+
+      .reject:hover {
+        background-color: #d32f2f; /* Hover effect */
+      }
+
+      .register {
+        background-color: #764ba2;
+      }
+
+      .register:hover {
+        background-color: #5d3a8a; /* Hover effect */
+      }
+
+      .footer {
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+        color: #777777;
+        margin-top: 30px; /* Added more space above footer */
+      }
+
+      .project-details {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 20px 0;
+        text-align: center; /* Centered text in project details */
+      }
+
+      .project-details p {
+        margin: 10px 0; /* Increased spacing between lines */
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Project Invitation</h1>
+      </div>
+
+      <div class="content">
+        <p>Hello,</p>
+
+        <div class="project-details">
+          <p>
+            You've been invited by <strong>{{inviterName}}</strong> to join:
+          </p>
+          <p><strong>{{projectName}}</strong></p>
+        </div>
+
+        {{#if isRegistered}}
+        <p>Please choose an option below:</p>
+        <table
+          align="center"
+          cellpadding="0"
+          cellspacing="0"
+          style="margin: auto"
+        >
+          <tr>
+            <td align="center" style="padding: 10px">
+              <a
+                href="{{acceptLink}}"
+                class="button accept"
+                style="
+                  background-color: #4caf50;
+                  padding: 10px 20px;
+                  color: #ffffff;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  display: inline-block;
+                  font-size: 16px;
+                "
+                >Accept Invitation</a
+              >
+            </td>
+            <td align="center" style="padding: 10px">
+              <a
+                href="{{rejectLink}}"
+                class="button reject"
+                style="
+                  background-color: #f44336;
+                  padding: 10px 20px;
+                  color: #ffffff;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  display: inline-block;
+                  font-size: 16px;
+                "
+                >Decline</a
+              >
+            </td>
+          </tr>
+        </table>
+        {{else}}
+        <p>To accept this invitation, please register on our platform:</p>
+        <div class="action-buttons">
+          <a
+            href="{{registerLink}}"
+            class="button register"
+            style="
+              background-color: #764ba2;
+              padding: 10px 20px;
+              color: #ffffff;
+              text-decoration: none;
+              border-radius: 5px;
+              display: inline-block;
+              font-size: 16px;
+            "
+            >Register & Join</a
+          >
+        </div>
+        {{/if}}
+
+        <p class="note">
+          If you didn't expect this invitation, you can safely ignore this
+          email.
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>Best regards,<br />The CollabDesign Team</p>
+      </div>
+    </div>
+  </body>
+</html>

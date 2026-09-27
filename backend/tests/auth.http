@@ -1,0 +1,69 @@
+### Sign Up
+POST http://localhost:3000/api/auth/sign-up
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "hafizhammad611@gmail.com",
+  "password": "SecurePassword123"
+}
+
+###
+
+### Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "hafizhammad611@gmail.com",
+  "password": "SecurePassword123"
+}
+
+###
+
+### Verify Account
+GET http://localhost:3000/api/auth/verify-account?token=token
+
+###
+
+### Resend Verification Link
+POST http://localhost:3000/api/auth/resend-verification-link
+Content-Type: application/json
+
+{
+  "email": "hafizhammad611@gmail.com"
+}
+
+###
+
+### Forgot Password
+POST http://localhost:3000/api/auth/forgot-password
+Content-Type: application/json
+
+{
+  "email": "hafizhammad611@gmail.com"
+}
+
+###
+
+### Reset Password
+POST http://localhost:3000/api/auth/reset-password?token=<PASTE_ENCRYPTED_TOKEN_HERE>
+Content-Type: application/json
+
+{
+  "newPassword": "NewSecurePassword123",
+  "confirmPassword": "NewSecurePassword123"
+}
+
+###
+
+### Change Password
+POST http://localhost:3000/api/auth/change-password
+Content-Type: application/json
+Authorization: Bearer <PASTE_YOUR_JWT_TOKEN_HERE>
+
+{
+  "oldPassword": "SecurePassword123",
+  "newPassword": "NewSecurePassword123",
+  "confirmNewPassword": "NewSecurePassword123"
+}

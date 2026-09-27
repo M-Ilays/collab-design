@@ -1,0 +1,17 @@
+POST http://localhost:3000/api/req/6761cb8b7eaef72bc7189f83/newReq
+Content-Type: application/json
+#Authorization: Bearer <your-jwt-token>
+
+{
+  "title": "Test Requirement",
+  "actor": ["User"],
+  "assignee": ["John Doe"],
+  "stakeholders": ["Stakeholder 1", "Stakeholder 2"],
+  "dependencies": ["dependency1", "dependency2"],
+  "targetRelease": "v1.0",
+  "category": "functional",
+  "priority": "high",
+  "status": "not_started",
+  "description": "Description of the requirement.",
+  "acceptanceCriteria": "Criteria for acceptance."
+}
