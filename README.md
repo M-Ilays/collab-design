@@ -1,6 +1,6 @@
 # Collab Design
 
-Collab Design is a web app for student software teams. It keeps UML diagrams, requirements, team chat, and a discussion forum in one place, so a project does not have to be split across separate tools.
+Collab Design is a web app for software teams. It keeps UML diagrams, requirements, team chat, and a discussion forum in one place, so a project does not have to be split across separate tools.
 
 ## Features
 
