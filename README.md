@@ -6,7 +6,7 @@ Collab Design is a web app for software teams. It keeps UML diagrams, requiremen
 
 - **Projects.** Create a project, invite teammates by email, and track active, completed, and archived work.
 - **Requirements.** Write structured requirements, comment on them, attach files, and export them as a PDF.
-- **UML diagrams.** Draw diagrams in the browser, or generate a use case, class, or activity diagram from the project requirements.
+- **UML diagrams.** Create diagrams manually on the canvas, or generate them automatically from the project requirements. Manual drawing supports class, object, activity, sequence, use case, communication, component, and deployment diagrams. Automatic generation supports class diagrams and use case diagrams.
 - **Versions.** Save a snapshot of requirements and diagrams, review older snapshots, and restore one.
 - **Team chat.** Real-time messages and file attachments inside a project.
 - **Forum.** A shared discussion area for questions that are not tied to one project.
