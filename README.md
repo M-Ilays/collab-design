@@ -85,7 +85,3 @@ For Google sign-in, the OAuth client needs this redirect URI:
 `http://localhost:3001/api/auth/google/callback`
 
 It must match `BACKEND_URL`.
-
-## About
-
-Final-year project supervised by Ma’am Mahwish Waqas.

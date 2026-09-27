@@ -66,12 +66,6 @@ Many existing tools offer limited functionality, forcing users to switch between
 - Support additional types of UML diagrams.
 - Allow users to choose from multiple requirement document templates or upload custom templates.
 
----
-
-## 👥 About the Team
-
-- **Supervisor:** Ma’am Mahwish Waqas
-- Developed by software engineering students passionate about making documentation simpler for everyone.
 
 ---
 
